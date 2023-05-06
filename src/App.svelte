@@ -33,13 +33,11 @@
 </script>
 
 <main style={cssVarStyles}>
-	<Header />
 	<Card {active}>
-		<Header />
 		<div class="subheader-container">
 			<div class="subheader">
 				<input type="text" class="input" required="required" bind:value={qrInput}>
-				<span class="label">URL or Text</span>
+				<span class="label">Input URL or Text</span>
 			</div>
 		</div>
 		<Button on:click = {turnActive}>Generate QR Code</Button>
@@ -47,6 +45,7 @@
 			<img src={qrImage} alt="" class="qr">
 		</div>
 	</Card>
+	<Header />
 </main>
 
 <style>
